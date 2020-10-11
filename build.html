@@ -20,113 +20,144 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script>
-        var radius = 8;
-        TweenMax.staggerFromTo('.blob', 4 ,{
-            cycle: {
-                attr:function(i) {
-                    var r = i*90;
-                    return {
-                        transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-                    }      
-                }
-            }  
-        },{
-            cycle: {
-                attr:function(i) {
-                    var r = i*90+360;
-                    return {
-                        transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-                    }      
-                }
-            },
-            ease:Linear.easeNone,
-            repeat:-1
-        });
-        </script>
-    <nav class="align-items-center navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" data-aos="fade" data-aos-duration="1000">Epsilon Hacks</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" data-aos="fade" data-aos-duration="1000">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sponsors</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Judges and Mentors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Prizes</a>
-            </li>
-            <div class="pulseBtn">Sign up</div>
-          </ul>
-        </div>
-    </nav>
+  <script>
+      var radius = 8;
+      TweenMax.staggerFromTo('.blob', 4 ,{
+          cycle: {
+              attr:function(i) {
+                  var r = i*90;
+                  return {
+                      transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
+                  }
+              }
+          }
+      },{
+          cycle: {
+              attr:function(i) {
+                  var r = i*90+360;
+                  return {
+                      transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
+                  }
+              }
+          },
+          ease:Linear.easeNone,
+          repeat:-1
+      });
+  </script>
+  <nav class="align-items-center navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" data-aos="fade" data-aos-duration="1000">Epsilon Hacks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <section class="hero" id="home">
-        <div class="row">
-        <div class="col-lg-7 col-md-8 col-sm-12">
-        <h1 class="heroText">Epsilon<br>Hacks 2.0</h1>
-        <span class="blueText heroInfo reem">
-            <svg height='2em' width='2em'  fill="#ef6b4e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><path d="M79.5,37.3c-0.4-7-3.4-13.5-8.3-18.5c-11.7-11.7-30.7-11.7-42.4,0c-1.9,1.9-3.6,4.1-4.9,6.5c-3.3,6-4.2,13.1-2.8,19.8    c0.7,3.5,2,6.8,3.6,10c0.7,1.3,1.5,2.5,2.3,3.8c2.6,3.8,5.5,7.4,8.2,11.1c2.7,3.7,5.5,7.4,8.2,11.1c2.2,3,4.4,6,6.6,8.9    c0-0.1,1-1.3,1-1.4c3.3-4.4,6.6-8.9,9.8-13.3c3.4-4.7,7-9.3,10.4-14c0.1-0.1,0.1-0.2,0.2-0.3c1.3-1.8,2.7-3.5,3.7-5.5    c1-1.9,1.9-3.8,2.6-5.8C79.1,45.8,79.8,41.5,79.5,37.3z M50,59.1c-11,0-20-9-20-20s9-20,20-20s20,9,20,20S61,59.1,50,59.1z"></path></g></g></svg>
-            <span style="padding-top: 0.25em;">Location: Virtual</span>
-        </span>
-        <span class="blueText heroInfo reem">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef684e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="5" width="16" height="16" rx="2" />
-                <line x1="16" y1="3" x2="16" y2="7" />
-                <line x1="8" y1="3" x2="8" y2="7" />
-                <line x1="4" y1="11" x2="20" y2="11" />
-                <rect x="8" y="15" width="2" height="2" />
-              </svg>
-              <span style="padding-top: 0.25em;">Date: March 2020</span>
-        </span>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" data-aos="fade" data-aos-duration="1000">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sponsors</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Judges and Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prizes</a>
+          </li>
+          <div class="pulseBtn">Sign up</div>
+        </ul>
+      </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="row">
+    <div class="col-lg-7 col-md-8 col-sm-12">
+    <h1 class="heroText">Epsilon<br>Hacks 2.0</h1>
+    <span class="blueText heroInfo reem">
+      <svg height='2em' width='2em'  fill="#ef6b4e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+        <g>
+          <g>
+            <path d="M79.5,37.3c-0.4-7-3.4-13.5-8.3-18.5c-11.7-11.7-30.7-11.7-42.4,0c-1.9,1.9-3.6,4.1-4.9,6.5c-3.3,6-4.2,13.1-2.8,19.8    c0.7,3.5,2,6.8,3.6,10c0.7,1.3,1.5,2.5,2.3,3.8c2.6,3.8,5.5,7.4,8.2,11.1c2.7,3.7,5.5,7.4,8.2,11.1c2.2,3,4.4,6,6.6,8.9    c0-0.1,1-1.3,1-1.4c3.3-4.4,6.6-8.9,9.8-13.3c3.4-4.7,7-9.3,10.4-14c0.1-0.1,0.1-0.2,0.2-0.3c1.3-1.8,2.7-3.5,3.7-5.5    c1-1.9,1.9-3.8,2.6-5.8C79.1,45.8,79.8,41.5,79.5,37.3z M50,59.1c-11,0-20-9-20-20s9-20,20-20s20,9,20,20S61,59.1,50,59.1z" />
+          </g>
+        </g>
+      </svg>
+      <span style="padding-top: 0.25em;">Location: Virtual</span>
+    </span>
+    <span class="blueText heroInfo reem">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef684e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      <span style="padding-top: 0.25em;">Date: March 2020</span>
+    </span>
     </div>
     <div class="col-lg-5 col-md-4 col-sm-0">
-       <!--add content-->
+      <!--add content-->
     </div>
     <div class="custom-shape-divider-bottom-1602383754">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" />
+      </svg>
     </div>
-    </section>
-      <script>
-        AOS.init({
-            // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-            
+  </section>
+  <section class="about mukta" id="home">
+    <div data-aos="fade-in">
+      <h1>Hello!</h1>
+    </div>
+    <div data-aos="fade-in">
+    <table>
+      <tbody>
+        <tr>
+          <td style="padding-right: 15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus. Laoreet id donec ultrices tincidunt arcu non sodales neque. Arcu non sodales neque sodales ut etiam sit amet. Sed velit dignissim sodales ut eu sem integer vitae justo. Suscipit adipiscsed faucibus turpis in eu mi. Enim sit amet venenatis urna cursus eget nunc scelerisque. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Turpis egestas pretium aenean pharetra magna. Augue lacus viverra vitae congue eu consequat ac felis donec.
+          </td>
+          <td style="width: 271.755px;">
+            <img src="https://cdn.dribbble.com/users/1484654/screenshots/12124455/media/767417328eeb9e14c1cb40c69e323591.png" alt="" width="271" height="203" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="custom-shape-divider-bottom-1602383754">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" />
+      </svg>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
-            duration: 400, // values from 0 to 3000, with step 50ms
-            easing: 'ease-in-cubic', // default easing for AOS animations
-            once: true, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-            });
-      </script>
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease-in-cubic', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+  </script>
 </body>
 </html>
