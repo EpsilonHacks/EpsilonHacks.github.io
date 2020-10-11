@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Reem+Kufi&display=swap');
+:root{
+    --myorange: #EF6B4E;
+    --bg1: #293341;
+    --myblue: #DFFBFC;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    font-family: 'Reem Kufi', sans-serif;
+}
+.reem{
+    font-family: 'Reem Kufi', sans-serif;
+}
+.hero{
+    position: relative;
+    height: 45em;
+    background-color: var(--bg1);
+}
+.heroInfo{
+    font-size: 1.5em;
+    padding: 0em 0.3em 0em 38px;
+    vertical-align: middle;
+    line-height: 2em;
+}
+span svg{
+    position: relative;
+    top: -0.25em;
+}
+.heroText{
+    font-size: 8em;
+    color: #ffffff;
+    padding: 0.6em 0em 0.3em 38px;
+}
+.blueText{
+    color: var(--myblue);
+}
+.pulseBtn {
+    padding: 6px 30px;
+    background-color: #EF6B4E;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    max-width: 9em;
+    font-family: 'Reem Kufi', sans-serif;
+}
+@media only screen and (min-width: 992px) {
+    .pulseBtn{
+        position: absolute;
+        right: 2%;
+    }
+}
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    }
+}
+.custom-shape-divider-bottom-1602383754 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1602383754 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1602383754 .shape-fill {
+    fill: #FFB2A2;
+}
+
+
+
+
+
+
+/* .signup {
+    position: relative;
+    top: 50%;
+    left: 50%;   
+    right: 1em;
+    transform: translate(-50%,5px);
+    width: 7em;
+    height: 2em;
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+    background: var(--myorange);
+    background-size: 400%;
+    border: none;
+   }
+   .signup:hover {
+    animation: animate 8s linear infinite;
+   }
+   @keyframes animate {
+    0% {
+     background-position: 0%;
+    }
+    100% {
+     background-position: 400%;
+    }
+   }
+   .signup:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+   }
+   .signup:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+   } */
