@@ -49,6 +49,13 @@ span svg{
     padding: 6em;
     border-color: var(--lightorange);
 }
+.agenda {
+    position: relative;
+    height: 30em;
+    background-color: #fff;
+    padding: 6em;
+    border-color: #fff;
+}
 .blueText{
     color: var(--myblue);
 }
@@ -93,6 +100,28 @@ span svg{
 
 .custom-shape-divider-bottom-1602383754 .shape-fill {
     fill: #FFB2A2;
+}
+
+.custom-shape-divider-top-1602383755 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1602383755 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+
+.custom-shape-divider-bottom-1602383755 .shape-fill {
+    fill: #FFFFFF;
 }
 
 
