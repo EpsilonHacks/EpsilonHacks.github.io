@@ -12,6 +12,9 @@ body{
 h1, h2, h3{
     font-family: 'Reem Kufi', sans-serif;
 }
+div.right {
+    text-align: right;
+}
 .reem{
     font-family: 'Reem Kufi', sans-serif;
 }
@@ -120,8 +123,8 @@ span svg{
 }
 
 
-.custom-shape-divider-bottom-1602383755 .shape-fill {
-    fill: #FFFFFF;
+.custom-shape-divider-top-1602383755 .shape-fill {
+    fill: #FFB2A2;
 }
 
 
