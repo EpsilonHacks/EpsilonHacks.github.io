@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epsilon Hacks 2.0</title>
+    <script LANGUAGE="JavaScript">
+      function DayDiff(CurrentDate)
+      {
+        var TYear=CurrentDate.getFullYear();
+              var TDay=new Date("April, 04, 2021");
+              TDay.getFullYear(TYear);
+              var DayCount=(TDay-CurrentDate)/(1000*60*60*24);
+              DayCount=Math.round(DayCount); 
+          return(DayCount);
+      }
+    </script>
     <meta
       name="description"
       content="Epsilon Hacks is a hackathon in the Bay Area.
      It will be hosted at Make School in San Francisco, California. It will start on March 14 and end on March 15.
      This hackathon is for high school students in the Bay Area, by high school students in the Bay Area."
     />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
     <meta
       name="keywords"
       content="Bay Area, Hackathon, Highschool, coding, highschool hackathon, fun, competition, events, Bay Area Hackathon, bay area hackathon"
@@ -35,7 +47,7 @@
   </head>
   <body>
     <nav class="align-items-center navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#" data-aos="fade" data-aos-duration="1000"
+      <a class="navbar-brand" href="#" data-aos="fade-down" data-aos-duration="800"
         >Epsilon Hacks</a
       >
       <button
@@ -53,8 +65,8 @@
       <div
         class="collapse navbar-collapse"
         id="navbarSupportedContent"
-        data-aos="fade"
-        data-aos-duration="1000"
+        data-aos="fade-down"
+        data-aos-duration="800"
       >
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
@@ -81,9 +93,9 @@
     </nav>
 
     <section class="hero" id="home">
-      <div class="container">
+      <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-7 col-md-8 col-sm-12">
+        <div data-aos="fade-right" data-aos-duration="800" class="col-lg-6 col-md-8 col-sm-12">
           <h1 class="heroText">Epsilon<br />Hacks 2.0</h1>
           <span class="blueText heroInfo reem">
             <svg
@@ -129,11 +141,37 @@
               <line x1="4" y1="11" x2="20" y2="11" />
               <rect x="8" y="15" width="2" height="2" />
             </svg>
-            <span style="padding-top: 0.25em">Date: March 2020</span>
+            <span style="padding-top: 0.25em">Date: April 3-4, 2021</span>
           </span>
+          <script LANGUAGE="Javascript">
+            var Today 	= new Date();
+            var z1 = DayDiff(Today);
+            document.write("<div class='dayBox'> <h4 class='reem'>"+z1+"</h4> <h6 class='reem'>days</h6> </div>");            
+            // End of hiding JavaScript code from old browsers -->
+            </script>
         </div>
-        <div class="col-lg-5 col-md-4 col-sm-0">
-          <!--add content-->
+        <div class="col-lg-6 col-md-4 col-sm-0">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-910 0 1268 864" style="enable-background:new 0 0 1728 864;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" id="bigE" d="M-472.2,782.3c-67.6-0.1-177.6-0.2-245.1-0.1c-3,0-5.1-0.9-7.3-2.7c-28.7-24.3-57.5-48.7-86.2-73
+			c-31.5-26.6-63-53.3-94.5-79.9c-0.6-0.5-1.3-1-2-1.6c-0.6-0.5-0.5-1.4,0.2-1.8c102-54.1,203.7-108,305.4-162
+			c0.6-0.3,0.8-1.1,0.3-1.7c-101.7-114.7-203.1-229.2-304.8-343.9c-0.6-0.7-0.1-1.8,0.8-1.8h626.2c1,0,1.4,1.2,0.7,1.9
+			c-2.1,2-4.1,3.9-6.1,5.7c-24.5,22.4-49,44.7-73.6,67.1c-29.8,27.1-59.6,54.3-89.4,81.4c-1.2,1.1-136.8,1.7-202.8,1.7l0,0
+			c-0.5,1.6-0.4,1.5-0.9,3.1c61.1,38.2,122.2,76.3,183.6,114.7c0.5,0.3,0.7,1,0.3,1.5c-48.5,77.1-96.9,154.2-145.7,231.8
+			c-0.4,0.7,0.1,1.6,0.9,1.6h275.7h0c-2.8,2.2-5.7,4.3-8.3,6.7"/>
+		<path class="st1" d="M-470.2,390.7l-434.5,230.1c-1,0.5-0.6,2,0.5,2l289.7,0.3c0.4,0,0.7-0.2,0.9-0.5l144.9-230.5
+			C-468.2,391.3-469.3,390.2-470.2,390.7z"/>
+	</g>
+	<path class="st0" id="sharp" d="M325.7,782.3h-629.2c-0.9,0-1.4-1.1-0.8-1.8l130.5-155.9c0.2-0.2,0.5-0.4,0.8-0.4l405,0.5"/>
+	<path class="st0" id="rect" d="M-122,271.5h92.8c0.6,0,1.1,0.5,1.1,1.1v350.6c0,0.6-0.5,1.1-1.1,1.1H-122c-0.6,0-1.1-0.5-1.1-1.1V272.6
+		C-123,272-122.6,271.5-122,271.5z"/>
+	<path class="st0" id="rect" d="M53.1,271.5h92.8c0.6,0,1.1,0.5,1.1,1.1v350.6c0,0.6-0.5,1.1-1.1,1.1H53.1c-0.6,0-1.1-0.5-1.1-1.1V272.6
+		C52,272,52.5,271.5,53.1,271.5z"/>
+	<path class="st0" id="sharp" d="M-272,113.8h595.5c0.9,0,1.4,1,0.8,1.7L202.2,271.5c-0.2,0.3-0.5,0.4-0.8,0.4l-379-0.5"/>
+</g>
+          </svg>
         </div>
       </div>
       </div>
@@ -148,37 +186,18 @@
         </svg>
       </div>
     </section>
+
     <section class="about mukta" id="home">
-      <div data-aos="fade-in">
-        <h1>Hello!</h1>
-      </div>
-      <div data-aos="fade-in">
-        <table>
-          <tbody>
-            <tr>
-              <td style="padding-right: 15px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. At
-                risus viverra adipiscing at in tellus. Laoreet id donec ultrices
-                tincidunt arcu non sodales neque. Arcu non sodales neque sodales
-                ut etiam sit amet. Sed velit dignissim sodales ut eu sem integer
-                vitae justo. Suscipit adipiscsed faucibus turpis in eu mi. Enim
-                sit amet venenatis urna cursus eget nunc scelerisque. Felis eget
-                velit aliquet sagittis id consectetur purus ut faucibus. Turpis
-                egestas pretium aenean pharetra magna. Augue lacus viverra vitae
-                congue eu consequat ac felis donec.
-              </td>
-              <td style="width: 271.755px">
-                <img
-                  src="https://cdn.dribbble.com/users/1484654/screenshots/12124455/media/767417328eeb9e14c1cb40c69e323591.png"
-                  alt=""
-                  width="271"
-                  height="203"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="container-fluid pb-5">
+        <div class="row">
+          <div data-aos="fade-right" data-aos-duration="800" class="col-lg-7">
+            <h4 class="reem slate text-left">About our hackathon:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at in tellus. Laoreet id donec ultrices tincidunt arcu non sodales neque. Arcu non sodales neque sodales ut etiam sit amet. Sed velit dignissim sodales ut eu sem integer vitae justo. Suscipit adipiscing bibendum est ultricies integer quis. Sed libero enim sed faucibus turpis in eu mi. Enim sit amet venenatis urna cursus eget nunc scelerisque. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Turpis egestas pretium aenean pharetra magna. Augue lacus viverra vitae congue eu consequat ac felis donec.</p>
+          </div>
+          <div class="col-lg-5">
+            <img data-aos="fade-left" data-aos-duration="800" src="assets/programmer.svg" alt="Person with 6 monitors" style=" width: inherit;" >
+          </div>
+        </div>
       </div>
       <div class="custom-shape-divider-bottom-1603687022">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -188,39 +207,54 @@
     </section>
 
     <section class="schedule" id="schedule">
-      <h1 class="reem mr-5 mb-5 pb-5 pr-5 float-right">Schedule</h1>
-      <br> 
-      <br>
+      <h1 data-aos="fade-right" data-aos-duration="800" class="reem ml-5">Schedule</h1>
       <div class="container-fluid">
         <div class="row">
           <div class="triangle"></div>
             <div class="triangle"></div>
             <div class="triangle"></div>
           <div class="col-md-12">
+            <h2 data-aos="fade-left" data-aos-duration="800" class="reem mr-5 float-right">April 3</h2>
             <ul class="timeline">
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">8:00 AM</h4>
+                <p>Welcoming ceremony</p>
               </li>
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">10:00-11:00 AM</h4>
+                <p>Intro to Github</p>
               </li>
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">1:00-2:00 PM</h4>
+                <p>Intro to App Development</p>
               </li>
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">3:00-4:00 PM</h4>
+                <p>Intro to Python</p>
               </li>
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">4:00-5:00 PM</h4>
+                <p>Intro to AI/ML</p>
               </li>
-              <li  data-aos="fade-left" data-aos-duration="800">
-                <h4 class="reem">12:00-1:00</h4>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">6:00-7:00 PM</h4>
+                <p>Among Us</p>
+              </li>
+            </ul>
+
+            <h2 data-aos="fade-left" data-aos-duration="800" class="reem mr-5 text-right">April 4</h2>
+            <ul class="timeline">
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">10:00-11:00 AM</h4>
+                <p>Check-in Call</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">11:00 AM</h4>
+                <p>Submissions are due</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">12:00-2:00 PM</h4>
+                <p>Judging</p>
               </li>
             </ul>
           </div>
@@ -243,7 +277,7 @@
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 400, // values from 0 to 3000, with step 50ms
-        easing: "ease-in-cubic", // default easing for AOS animations
+        easing: "ease", // default easing for AOS animations
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation

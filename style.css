@@ -5,10 +5,12 @@
   --bg1: #293341;
   --myblue: #dffbfc;
   --circle: #98c0d9;
+  --slate: #4a6576;
 }
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -32,9 +34,12 @@ div.right {
 }
 .heroInfo {
   font-size: 1.5em;
-  padding: 0em 0.3em 0em 38px;
+  padding: 0em 0.3em 0em 0.2em;
   vertical-align: middle;
   line-height: 2em;
+}
+.slate {
+  color: var(--slate);
 }
 span svg {
   position: relative;
@@ -43,7 +48,7 @@ span svg {
 .heroText {
   font-size: 8em;
   color: #ffffff;
-  padding: 0.6em 0em 0.3em 38px;
+  padding: 0.6em 0em 0.3em 0.2em;
 }
 .paddingBetweenCols td {
   padding: 0 15px;
@@ -54,6 +59,7 @@ span svg {
   height: calc(100% + 10em);
   background-color: var(--lightorange);
   border-color: var(--lightorange);
+  padding: 2em 0;
 }
 .custom-shape-divider-bottom-1603687022 {
   position: absolute;
@@ -95,7 +101,7 @@ ul.timeline:before {
   display: inline-block;
   position: absolute;
   left: 29px;
-  width: 4px;
+  width: 3px;
   height: 100%;
   z-index: 400;
 }
@@ -202,54 +208,85 @@ ul.timeline > li:before {
 .custom-shape-divider-top-1602383755 .shape-fill {
   fill: #ffb2a2;
 }
-
-/* .signup {
-    position: relative;
-    top: 50%;
-    left: 50%;   
-    right: 1em;
-    transform: translate(-50%,5px);
-    width: 7em;
-    height: 2em;
-    text-align: center;
-    color: #fff;
-    font-size: 1em;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
-    background: var(--myorange);
-    background-size: 400%;
-    border: none;
-   }
-   .signup:hover {
-    animation: animate 8s linear infinite;
-   }
-   @keyframes animate {
-    0% {
-     background-position: 0%;
-    }
-    100% {
-     background-position: 400%;
-    }
-   }
-   .signup:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    bottom: -5px;
-    right: -5px;
-    left: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 40px;
-    filter: blur(20px);
-    opacity: 0;
-    transition: 0.5s;
-   }
-   .signup:hover:before {
-    filter: blur(20px);
-    opacity: 1;
-    animation: animate 8s linear infinite;
-   } */
+.bigLogo {
+  height: 18em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.st0 {
+  stroke: #797979;
+  stroke-width: 1px;
+  fill: none;
+  fill-opacity: 0;
+  animation: lightFill 3s linear 1.8s forwards;
+}
+.st1 {
+  stroke: #363636;
+  stroke-width: 2px;
+  stroke-dasharray: 1060.239501953125;
+  stroke-dashoffset: 1060.239501953125;
+  fill: none;
+  animation: dash 3s linear 0.6s forwards, darkFill 3s ease 2.5s forwards;
+}
+#bigE {
+  stroke-dasharray: 3162.9946289;
+  stroke-dashoffset: 3162.9946289;
+  animation: dash 2s linear forwards, lightFill 3s ease 2s forwards;
+}
+#sharp {
+  stroke-dasharray: 1240.88916015625;
+  stroke-dashoffset: 1240.88916015625;
+  animation: dash 2s linear 0.7s forwards, lightFill 3s ease 2s forwards;
+}
+#rect {
+  stroke-dasharray: 893.67236328125;
+  stroke-dashoffset: 893.67236328125;
+  animation: dash 2s linear 1.1s forwards, lightFill 3s ease 2s forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes lightFill {
+  from {
+    fill: transparent;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #797979;
+    fill-opacity: 1;
+  }
+}
+@keyframes darkFill {
+  from {
+    fill: transparent;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #363636;
+    fill-opacity: 1;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #Layer_1 {
+    display: none;
+  }
+  .heroText {
+    font-size: 6em;
+  }
+  .heroInfo {
+    display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+.dayBox {
+  background-color: #c4c4c4;
+  padding: 10px 30px;
+  width: max-content;
+  margin: 1em 1em;
+}
