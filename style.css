@@ -61,6 +61,14 @@ span svg {
  border-color: var(--lightorange);
  padding: 2em 0;
 }
+.sponsors {
+  position: relative;
+  min-height: 100%;
+  height: calc(100% + 10em);
+  background-color: var(--circle);
+  border-color: var(--circle);
+  padding: 2em 0;
+}
 .custom-shape-divider-bottom-1603687022 {
  position: absolute;
  bottom: 0;
@@ -78,7 +86,6 @@ span svg {
  height: 70px;
  transform: rotateY(180deg);
 }
- 
 .custom-shape-divider-bottom-1603687022 .shape-fill {
  fill: #ffffff;
 }
@@ -187,7 +194,29 @@ ul.timeline > li:before {
 .custom-shape-divider-bottom-1602383754 .shape-fill {
  fill: #ffb2a2;
 }
- 
+
+.custom-shape-divider-bottom-1602383755 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1602383755 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1602383755 .shape-fill {
+  fill: #98c0d9;
+}
+
 .custom-shape-divider-top-1602383755 {
  position: absolute;
  top: 0;
