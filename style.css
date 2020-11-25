@@ -69,6 +69,15 @@ span svg {
   border-color: var(--circle);
   padding: 2em 0;
 }
+.bg-gray-900 {
+  background-color: var(--bg1);
+  color: var(--myblue);
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
 .custom-shape-divider-bottom-1603687022 {
  position: absolute;
  bottom: 0;
