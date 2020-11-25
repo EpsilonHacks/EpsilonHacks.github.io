@@ -53,6 +53,12 @@ span svg {
 .paddingBetweenCols td {
  padding: 0 15px;
 }
+.paddingleft {
+  padding-left: 1em;
+}
+.negpaddingleft {
+  padding-left: -1em;
+}
 .about {
  position: relative;
  min-height: 100%;
