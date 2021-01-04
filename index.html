@@ -1,18 +1,672 @@
-<!doctype html>
-<title>Website Under Construction</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Hacks 2.0</title>
+    <script LANGUAGE="JavaScript">
+      function DayDiff(CurrentDate)
+      {
+        var TYear=CurrentDate.getFullYear();
+              var TDay=new Date("April, 04, 2021");
+              TDay.getFullYear(TYear);
+              var DayCount=(TDay-CurrentDate)/(1000*60*60*24);
+              DayCount=Math.round(DayCount); 
+          return(DayCount);
+      }
+    </script>
+    <meta
+      name="description"
+      content="Epsilon Hacks is a hackathon in the Bay Area.
+     It will be hosted at Make School in San Francisco, California. It will start on March 14 and end on March 15.
+     This hackathon is for high school students in the Bay Area, by high school students in the Bay Area."
+    />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta
+      name="keywords"
+      content="Bay Area, Hackathon, Highschool, coding, highschool hackathon, fun, competition, events, Bay Area Hackathon, bay area hackathon"
+    />
+    <meta name="author" content="Epsilon Hacks" />
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re still constructing the new website at the moment. If you need to you can always contact us through email. Otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; The Epsilon Hacks Team</p>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="files/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="align-items-center navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" data-aos="fade-down" data-aos-duration="800"
+        >Epsilon Hacks</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+        data-aos="fade-down" 
+        data-aos-duration="800"
+      >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Judges and Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prizes">Prizes</a>
+          </li>
+          <a href="form.html">
+          <div class="pulseBtn">
+            Sign Up
+          </div></a>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="container-fluid">
+      <div class="row">
+        <div data-aos="fade-right" data-aos-duration="800" class="col-lg-6 col-md-8 col-sm-12">
+          <h1 class="heroText">Epsilon<br />Hacks 2.0</h1>
+          <span class="blueText heroInfo reem">
+            <svg
+              height="2em"
+              width="2em"
+              fill="#ef6b4e"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 100"
+              style="enable-background: new 0 0 100 100"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M79.5,37.3c-0.4-7-3.4-13.5-8.3-18.5c-11.7-11.7-30.7-11.7-42.4,0c-1.9,1.9-3.6,4.1-4.9,6.5c-3.3,6-4.2,13.1-2.8,19.8    c0.7,3.5,2,6.8,3.6,10c0.7,1.3,1.5,2.5,2.3,3.8c2.6,3.8,5.5,7.4,8.2,11.1c2.7,3.7,5.5,7.4,8.2,11.1c2.2,3,4.4,6,6.6,8.9    c0-0.1,1-1.3,1-1.4c3.3-4.4,6.6-8.9,9.8-13.3c3.4-4.7,7-9.3,10.4-14c0.1-0.1,0.1-0.2,0.2-0.3c1.3-1.8,2.7-3.5,3.7-5.5    c1-1.9,1.9-3.8,2.6-5.8C79.1,45.8,79.8,41.5,79.5,37.3z M50,59.1c-11,0-20-9-20-20s9-20,20-20s20,9,20,20S61,59.1,50,59.1z"
+                  />
+                </g>
+              </g>
+            </svg>
+            <span style="padding-top: 0.25em">Location: Virtual</span>
+          </span>
+          <span class="blueText heroInfo reem">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-calendar-event"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ef684e"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="5" width="16" height="16" rx="2" />
+              <line x1="16" y1="3" x2="16" y2="7" />
+              <line x1="8" y1="3" x2="8" y2="7" />
+              <line x1="4" y1="11" x2="20" y2="11" />
+              <rect x="8" y="15" width="2" height="2" />
+            </svg>
+            <span style="padding-top: 0.25em">Date: April 3-4, 2021</span>
+          </span>
+          <script LANGUAGE="Javascript">
+            var Today 	= new Date();
+            var z1 = DayDiff(Today);
+            document.write("<div class='dayBox'> <h4 class='reem'>"+z1+"</h4> <h6 class='reem'>days</h6> </div>");            
+            // End of hiding JavaScript code from old browsers -->
+            </script>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-0" style="margin: auto">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-910 0 1268 864" style="enable-background:new 0 0 1728 864;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" id="bigE" d="M-472.2,782.3c-67.6-0.1-177.6-0.2-245.1-0.1c-3,0-5.1-0.9-7.3-2.7c-28.7-24.3-57.5-48.7-86.2-73
+			c-31.5-26.6-63-53.3-94.5-79.9c-0.6-0.5-1.3-1-2-1.6c-0.6-0.5-0.5-1.4,0.2-1.8c102-54.1,203.7-108,305.4-162
+			c0.6-0.3,0.8-1.1,0.3-1.7c-101.7-114.7-203.1-229.2-304.8-343.9c-0.6-0.7-0.1-1.8,0.8-1.8h626.2c1,0,1.4,1.2,0.7,1.9
+			c-2.1,2-4.1,3.9-6.1,5.7c-24.5,22.4-49,44.7-73.6,67.1c-29.8,27.1-59.6,54.3-89.4,81.4c-1.2,1.1-136.8,1.7-202.8,1.7l0,0
+			c-0.5,1.6-0.4,1.5-0.9,3.1c61.1,38.2,122.2,76.3,183.6,114.7c0.5,0.3,0.7,1,0.3,1.5c-48.5,77.1-96.9,154.2-145.7,231.8
+			c-0.4,0.7,0.1,1.6,0.9,1.6h275.7h0c-2.8,2.2-5.7,4.3-8.3,6.7"/>
+		<path class="st1" d="M-470.2,390.7l-434.5,230.1c-1,0.5-0.6,2,0.5,2l289.7,0.3c0.4,0,0.7-0.2,0.9-0.5l144.9-230.5
+			C-468.2,391.3-469.3,390.2-470.2,390.7z"/>
+	</g>
+	<path class="st0" id="sharp" d="M325.7,782.3h-629.2c-0.9,0-1.4-1.1-0.8-1.8l130.5-155.9c0.2-0.2,0.5-0.4,0.8-0.4l405,0.5"/>
+	<path class="st0" id="rect" d="M-122,271.5h92.8c0.6,0,1.1,0.5,1.1,1.1v350.6c0,0.6-0.5,1.1-1.1,1.1H-122c-0.6,0-1.1-0.5-1.1-1.1V272.6
+		C-123,272-122.6,271.5-122,271.5z"/>
+	<path class="st0" id="rect" d="M53.1,271.5h92.8c0.6,0,1.1,0.5,1.1,1.1v350.6c0,0.6-0.5,1.1-1.1,1.1H53.1c-0.6,0-1.1-0.5-1.1-1.1V272.6
+		C52,272,52.5,271.5,53.1,271.5z"/>
+	<path class="st0" id="sharp" d="M-272,113.8h595.5c0.9,0,1.4,1,0.8,1.7L202.2,271.5c-0.2,0.3-0.5,0.4-0.8,0.4l-379-0.5"/>
+</g>
+          </svg>
+        </div>
+      </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1602383754">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- <section class="about mukta" id="about">
+      <div class="container-fluid pb-5">
+        <div class="row">
+          <div data-aos="fade-right" data-aos-duration="800" class="col-lg-6" style="vertical-align: middle;">
+            <h2 class="reem slate text-left" style="font-size: 4em;">About Epsilon Hacks</h2>  
+            <p style="font-size: 1.4em; letter-spacing: 0px; font-weight: 700;">Our mission is to provide students the opportunity to technologically innovate solutions for various issues including, but not limited to, socio-economic, healthcare, education, and environmental issues within our communities. We want to challenge each and every student to create something extraordinary, to truly shape the community they reside in, and be rewarded for the change they create. </p> 
+          </div>
+          <div class="col-lg-6" style="overflow-x: hidden;">
+            <img data-aos="fade-left" data-aos-duration="800" src="assets/programmer.svg" alt="Person with 6 monitors" style=" width: inherit;" >
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1603687022">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
     </div>
-</article>
+    </section> -->
+    <section class="faq mukta" id="faq">
+      <div class="container-fluid">
+      <div>
+        <br />
+        <br />
+        <h1 data-aos="fade-right" class="reem center font-weight-bold">Frequently Asked Questions</h1> 
+        <br />
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question0" name="q"  class="nodisplay" />
+          <div class="plus">+</div>  
+          <label for="question0" class="mukta question">
+            What is Epsilon Hacks?
+          </label>
+          <div class="mukta answers">
+            Epsilon Hacks is a hackathon for highschoolers from around the world. Our mission is to provide students the opportunity to technologically innovate solutions for various issues including, but not limited to, socio-economic, healthcare, education, and environmental issues within our communities. We want to challenge each and every student to create something extraordinary, to truly shape the community they reside in, and be rewarded for the change they create.
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question1" name="q"  class="nodisplay" />
+          <div class="plus">+</div>  
+          <label for="question1" class="mukta question">
+            Who can attend?
+          </label>
+          <div class="mukta answers">
+            Any high school student can attend! Absolutely no coding experience is necessary!
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question2" name="q" class="nodisplay">
+          <div class="plus">+</div>
+          <label for="question2" class="mukta question">
+            How do I form or join a team?
+          </label>
+          <div class="mukta answers">
+            There will be a team mixer at the beginning of the hackathon for you to meet others and form teams. We encourage you to 
+  come and meet new people! Each team may have a maximum of four people.
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question3" name="q" class="nodisplay">
+          <div class="plus">+</div>
+          <label for="question3" class="mukta question">
+            Does this cost money?
+          </label>
+          <div class="mukta answers">
+            No! Epsilon Hacks is completely free for all participants.
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question4" name="q" class="nodisplay">
+          <div class="plus">+</div>
+          <label for="question4" class="mukta question">
+            Can I submit past projects?
+          </label>
+          <div class="mukta answers">
+            No, you have to submit projects that were created during the course of the hackathon.
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question5" name="q" class="nodisplay">
+          <div class="plus">+</div>
+          <label for="question5" class="mukta question">
+            How large can the teams be?
+          </label>
+          <div class="mukta answers">
+            Teams can consist of 1-4 people.
+          </div>
+        </div>
+        <div class="qs" data-aos="fade" data-aos-duration="800">
+          <input type="checkbox" id="question6" name="q" class="nodisplay">
+          <div class="plus">+</div>
+          <label for="question6" class="mukta question">
+            I have another question.
+          </label>
+          <div class="mukta answers">
+            Email us at epsilonhacks@gmail.com and we will get back to you ASAP.
+          </div>
+        </div>
+
+        <br />
+      </div>
+      </div>
+    </section>
+    <section class="schedule" id="schedule" style="overflow-x: hidden;">
+      <div class="custom-shape-divider-bottom-1603687022">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <br><br><br><br>
+      <h1 data-aos="fade-right" data-aos-duration="800" class="reem ml-5 negpaddingleft">Schedule</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+          <div class="col-md-12">
+            <h2 data-aos="fade-left" data-aos-duration="800" class="reem mr-5 float-right">April 3</h2>
+            <ul class="timeline">
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">8:00 AM</h4>
+                <p>Welcoming ceremony</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">10:00-11:00 AM</h4>
+                <p>Intro to Github</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">1:00-2:00 PM</h4>
+                <p>Intro to App Development</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">3:00-4:00 PM</h4>
+                <p>Intro to Python</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">4:00-5:00 PM</h4>
+                <p>Intro to AI/ML</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">6:00-7:00 PM</h4>
+                <p>Among Us</p>
+              </li>
+            </ul>
+
+            <h2 data-aos="fade-left" data-aos-duration="800" class="reem mr-5 text-right">April 4</h2>
+            <ul class="timeline">
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">10:00-11:00 AM</h4>
+                <p>Check-in Call</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">11:00 AM</h4>
+                <p>Submissions are due</p>
+              </li>
+              <li  data-aos="fade" data-aos-duration="800">
+                <h4 class="reem">12:00-2:00 PM</h4>
+                <p>Judging</p>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="custom-shape-divider-bottom-1602383755">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" />
+            </svg>
+          </div> -->
+        </div>
+    </section>
+
+    <section class="sponsors mukta" id="sponsors">
+        <div class="custom-shape-divider-top-1609199342">
+          <svg 
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 1200 120" 
+            preserveAspectRatio="none"
+          >
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" />
+          </svg>
+          
+        </div>
+        <div class="container-fluid" >
+          <!-- Section Silver Sponsors-->
+          <!-- <section class="text-center">
+          <h3 class="reem">Silver Sponsors.</h3>
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-5 col-lg-3">
+              <a class="sponsor-modern" href="#" data-triangle=".sponsor-modern-overlay">
+                <div class="sponsor-modern-overlay"></div>
+                <div class="sponsor-modern-img">
+                  <div class="sponsor-modern-img-default"><img src="assets/images/aops.png" alt="" width="180" height="70"/>
+                  </div>
+                  <div class="sponsor-modern-img-active"><img src="assets/images/Balsamiq.png" alt="" width="180" height="70"/>
+                  </div>
+                </div></a>
+            </div>
+            <div class="col-sm-5 col-lg-3">
+              <a class="sponsor-modern" href="#" data-triangle=".sponsor-modern-overlay">
+                <div class="sponsor-modern-overlay"></div>
+                <div class="sponsor-modern-img">
+                  <div class="sponsor-modern-img-default"><img src="assets/images/Bugsee.jpg" alt="" width="170" height="110"/>
+                  </div>
+                  <div class="sponsor-modern-img-active"><img src="assets/images/desmos.png" alt="" width="170" height="50"/>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          </section> -->
+          <!-- Section Gold Sponsors-->
+          <!-- <section class="text-center">
+          <h3  class="reem">Gold Sponsors.</h4>
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              
+              <div class="sponsor-ritmo"><a class="sponsor-ritmo-header" href="#" data-triangle=".sponsor-ritmo-overlay">
+                  <div class="sponsor-ritmo-overlay"></div>
+                  <div class="sponsor-ritmo-img">
+                    <div class="sponsor-ritmo-img-default"><img src="assets/images/Wolfram.jpg" alt="" width="300" height="125"/>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          </section> -->
+          <!-- Section Become a sponsor-->
+          <section class="text-center">
+          <div class="container">
+            <br><br><br><br>
+            <h1 class="reem" style="font-size: 4em;">Sponsors</h1>
+            <h3 class="reem blueText">Fiscal sponsor</h3>
+            <img src="assets/images/hackplus.png" alt="hackplus logo" style="display: block; height: 7em; width: auto; margin: 0 auto; padding: 1em 0;">
+            <a href="mailto:elaine@epsilonhacks.com" class="light" style="font-size: 2em; text-decoration: underline;">
+              Interested in sponsoring us?
+            </a>
+            <br /><br />  <br />
+          </div>
+          </section>
+        </div>      
+    </section>
+
+    <!-- <section class="prizes mukta" id="prizes"> 
+      <div class="container-fluid pb-5">
+        <h1 data-aos="fade-right" class="reem right">Prizes</h1> 
+        <div class="row text-center">
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->    
+    <section class="u-align-center u-palette-5-dark-3 u-section-1" id="sec-48cc" style="position: relative;">
+      <div class="custom-shape-divider-top-1609724110">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div><br><br><br><br>
+      <div class="u-sheet u-sheet-1">
+        <br />
+        <h1 class="reem u-text">Our Team</h1>
+        <div class="u-repeater u-list-1">
+          <div class="u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-1">
+              <img class="u-image u-image-1" src="assets/images/frederic.jpeg">
+              <div class="u-container-style u-group u-white u-group-1">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">
+                    Frederic
+                    <a href="mailto:frederic@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4> 
+                  <h6 class="u-align-center mukta u-text">Co-Executive Director</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-3">
+              <img class="u-image u-image-2" src="assets/images/raj.jpeg">
+              <div class="u-container-style u-group u-white u-group-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">Raj
+                    <a href="mailto:raj@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Co-Executive Director</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-5">
+              <img class="u-image u-image-3" src="assets/images/lauren.jpg">
+              <div class="u-container-style u-group u-white u-group-3">
+                <div class="u-container-layout u-valign-top u-container-layout-6">
+                  <h4 class="u-align-center reem u-text">Lauren
+                    <a href="mailto:lauren@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Director of Operations</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-1">
+              <img class="u-image u-image-1" src="assets/images/elaine.jpg">
+              <div class="u-container-style u-group u-white u-group-1">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">Elaine
+                    <a href="mailto:elaine@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Director of Sponsorships</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-3">
+              <img class="u-image u-image-2" src="assets/images/kerrine.jpg">
+              <div class="u-container-style u-group u-white u-group-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">Kerrine
+                    <a href="mailto:kerrine@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Director of Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-5">
+              <img class="u-image u-image-3" src="assets/images/ojasw.jpg">
+              <div class="u-container-style u-group u-white u-group-3">
+                <div class="u-container-layout u-valign-top u-container-layout-6">
+                  <h4 class="u-align-center reem u-text">Ojasw
+                    <a href="mailto:ojasw@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Director of Tech</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-1">
+              <img class="u-image u-image-1" src="assets/images/ansh.png">
+              <div class="u-container-style u-group u-white u-group-1">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">Ansh
+                    <a href="mailto:ansh@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Sponsorships</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-3">
+              <img class="u-image u-image-2" src="assets/images/manasa.png">
+              <div class="u-container-style u-group u-white u-group-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h4 class="u-align-center reem u-text">Manasa
+                    <a href="mailto:manasa@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Operations</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-repeater-item">
+            <div class="u-container-layout u-valign-top u-container-layout-5">
+              <img class="u-image u-image-3" src="assets/images/maxine.jpg">
+              <div class="u-container-style u-group u-white u-group-3">
+                <div class="u-container-layout u-valign-top u-container-layout-6">
+                  <h4 class="u-align-center reem u-text">Maxine
+                    <a href="mailto:maxine@epsilonhacks.com">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+                  </h4>
+                  <h6 class="u-align-center mukta u-text">Sponsorships</h6>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <a class="brand" href="index.html"><img class="footer-logo" src="assets/favicon.svg"  height="100" alt="Epsilon Logo" style="position: absolute; left: 50%; transform: translateX(-50%);"></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
