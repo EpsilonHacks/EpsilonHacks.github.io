@@ -119,7 +119,7 @@ h1.right {
   position: relative;
   min-height: 100%;
   height: calc(100% + 10em);
-  background-color: var(--bblue);
+  background-color: #fff;
   padding: 10em 0 2em 0;
 }
 .about {
@@ -324,7 +324,7 @@ h1.right {
 }
 
 .custom-shape-divider-top-1609724110 .shape-fill {
-  fill: #6c9ebe;
+  fill: #fff;
 }
 .custom-shape-divider-bottom-1602383755 {
   position: absolute;
@@ -441,7 +441,7 @@ h1.right {
 }
 
 .custom-shape-divider-top-1623889561 .shape-fill {
-  fill: #2a3342;
+  fill: #6c9ebe;
 }
 
 /*UL*/
