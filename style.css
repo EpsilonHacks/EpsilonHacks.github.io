@@ -115,6 +115,13 @@ h1.right {
   background-color: var(--bblue);
   padding: 2em 0;
 }
+.judges {
+  position: relative;
+  min-height: 100%;
+  height: calc(100% + 10em);
+  background-color: var(--bblue);
+  padding: 10em 0 2em 0;
+}
 .about {
   position: relative;
   min-height: 100%;
@@ -415,6 +422,26 @@ h1.right {
 }
 .custom-shape-divider-top-1609219200 .shape-fill {
   fill: #4a6576;
+}
+.custom-shape-divider-top-1623889561 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1623889561 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1623889561 .shape-fill {
+  fill: #2a3342;
 }
 
 /*UL*/
@@ -1173,3 +1200,108 @@ i {
   display: inline;
 }
 /*end-variables colors*/
+
+/* experimental judges */
+.row {}
+
+.p-top-30 {
+  padding-top: 30px;
+}
+
+.half-txt {
+  width: 60%;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 25px;
+  color: #7e7e7e;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.team-member,
+.team-member .team-img {
+  position: relative;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.team-member {
+  overflow: hidden;
+}
+
+.team-member,
+.team-member .team-img {
+  position: relative;
+}
+
+.team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.team-member:hover .team-hover .desk {
+  top: 45%;
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk {
+  opacity: 1;
+}
+
+.team-hover .desk {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+
+.desk,
+.desk h4 {
+  text-align: center;
+  color: #222;
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk {
+  opacity: 1;
+}
+
+.team-title {
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+}
