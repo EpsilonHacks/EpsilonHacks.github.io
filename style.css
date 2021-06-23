@@ -1201,8 +1201,10 @@ i {
 }
 /*end-variables colors*/
 
-/* experimental judges */
-.row {}
+/* judges */
+.row {
+  align-items: center;
+}
 
 .p-top-30 {
   padding-top: 30px;
@@ -1224,9 +1226,11 @@ i {
 .team-member .team-img {
   position: relative;
   height: auto;
-  width: auto;
+  width: 350px;
   max-width: 400px;
   max-height: 400px;
+  align-items: center;
+  align-content: center;
 }
 
 .team-member {
