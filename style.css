@@ -140,9 +140,21 @@ h1.right {
 }
 .schedule {
   position: relative;
-  height: calc(100% + 5em);
+  min-height: 55em;
+  /* height: calc(100% + 20em); */
   background-color: #fff;
   border-color: #fff;
+}
+@media only screen and (min-width: 476px) {
+  .verttext {
+    writing-mode: vertical-rl;
+    font-size: 13em;
+    color: darkgray;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    opacity: 0.6;
+  }
 }
 .bg-gray-900 {
   position: relative;
@@ -514,17 +526,6 @@ ul.timeline > li:before {
   animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
   max-width: 9em;
   font-family: "Reem Kufi", sans-serif;
-}
-@media only screen and (min-width: 476px) {
-  .verttext{
-    writing-mode: vertical-rl;
-          font-size: 13em;
-          color: darkgray;
-          position: absolute;
-          right: 0;
-          margin: 0;
-          opacity: 0.6;
-  }
 }
 @media only screen and (min-width: 992px) {
   .pulseBtn {
